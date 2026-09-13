@@ -1,0 +1,19 @@
+/* ---------- CERTIFICADOS E LINHA DO TEMPO ---------- */
+.certificados { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.cartao-certificado { background: var(--glass-bg); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 26px; text-align: left; transition: transform var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease); }
+.cartao-certificado:hover { transform: translateY(-4px); border-color: var(--border-strong); }
+.cartao-certificado__icone { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 10px; background: rgba(59,130,246,0.12); margin-bottom: 16px; overflow: hidden; }
+.cartao-certificado__logo { width: 100%; height: 100%; object-fit: contain; border-radius: inherit; }
+.cartao-certificado__titulo { font-size: 1.02rem; font-weight: 700; margin-bottom: 6px; }
+.cartao-certificado__instituicao { color: var(--gray); font-size: 0.9rem; margin-bottom: 6px; }
+.cartao-certificado__data { display: inline-flex; align-items: center; gap: 6px; color: var(--gray); font-size: 0.82rem; margin-bottom: 18px; }
+.cartao-certificado__botao { width: 100%; justify-content: center; }
+
+.linha-do-tempo { position: relative; max-width: 760px; margin-inline: auto; padding-left: 50px; }
+.linha-do-tempo::before { content: ""; position: absolute; left: 15px; top: 6px; bottom: 6px; width: 2px; background: linear-gradient(var(--border-strong), var(--border)); }
+.linha-do-tempo__item { position: relative; padding-bottom: 46px; }
+.linha-do-tempo__item:last-child { padding-bottom: 0; }
+.linha-do-tempo__marcador { position: absolute; left: -50px; top: 0; width: 32px; height: 32px; border-radius: 50%; background: var(--bg-secondary); border: 1px solid var(--border-strong); display: grid; place-items: center; font-family: var(--font-mono); font-size: 0.72rem; color: var(--blue-light); }
+.linha-do-tempo__data { font-family: var(--font-mono); color: var(--blue-light); font-size: 0.82rem; }
+.linha-do-tempo__titulo { margin-top: 6px; font-size: 1.08rem; font-weight: 700; }
+.linha-do-tempo__texto { margin-top: 8px; color: var(--gray); font-size: 0.95rem; max-width: 60ch; }

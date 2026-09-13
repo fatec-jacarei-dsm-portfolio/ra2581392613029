@@ -1,0 +1,11 @@
+/* ---------- RODAPÉ ---------- */
+.rodape { background: var(--bg-secondary); border-top: 1px solid var(--border); padding-top: 56px; }
+.rodape__grade { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 30px; padding-bottom: 36px; }
+.rodape__marca p { color: var(--gray); margin-top: 10px; font-size: 0.92rem; }
+.rodape__links { display: flex; flex-direction: column; gap: 12px; }
+.rodape__links a { color: var(--gray); font-size: 0.92rem; transition: color var(--dur-fast); }
+.rodape__links a:hover { color: var(--white); }
+.rodape__social { display: flex; gap: 14px; align-items: flex-start; }
+.rodape__social a { width: 40px; height: 40px; display: grid; place-items: center; border: 1px solid var(--border); border-radius: 10px; color: var(--gray); transition: color var(--dur-fast), border-color var(--dur-fast); }
+.rodape__social a:hover { color: var(--white); border-color: var(--border-strong); }
+.rodape__inferior { border-top: 1px solid var(--border); padding: 22px 24px; color: var(--gray); font-size: 0.85rem; }

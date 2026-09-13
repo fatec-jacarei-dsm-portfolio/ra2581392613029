@@ -1,0 +1,33 @@
+/* ---------- MODAL DE CERTIFICADO ---------- */
+.modal { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; padding: 20px; visibility: hidden; opacity: 0; transition: opacity var(--dur-fast) var(--ease), visibility var(--dur-fast); }
+.modal.aberto { visibility: visible; opacity: 1; }
+.modal__sobreposicao { position: absolute; inset: 0; background: rgba(5, 8, 14, 0.75); backdrop-filter: blur(4px); }
+.modal__janela { position: relative; width: min(420px, 100%); background: var(--bg-secondary); border: 1px solid var(--border-strong); border-radius: var(--radius-lg); padding: 40px 30px 30px; text-align: center; box-shadow: var(--shadow-lg); transform: scale(0.94); transition: transform var(--dur-fast) var(--ease); }
+.modal__janela--projeto { width: min(820px, 100%); max-height: min(760px, 90vh); overflow-y: auto; text-align: left; }
+.modal.aberto .modal__janela { transform: scale(1); }
+.modal__fechar { position: absolute; top: 14px; right: 14px; width: 34px; height: 34px; display: grid; place-items: center; border-radius: 8px; color: var(--gray); }
+.modal__fechar:hover { color: var(--white); background: rgba(255,255,255,0.06); }
+.modal__titulo { font-size: 1.15rem; font-weight: 700; margin-bottom: 6px; }
+.modal__instituicao { color: var(--gray); font-size: 0.92rem; margin-bottom: 4px; }
+.modal__data { color: var(--blue-light); font-family: var(--font-mono); font-size: 0.82rem; }
+.modal__certificado-imagem { display: block; width: 100%; max-height: 62vh; object-fit: contain; margin: 24px auto 0; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--bg); }
+.modal-projeto__cabecalho { display: grid; grid-template-columns: minmax(180px, 0.75fr) minmax(300px, 1.25fr); gap: 28px; align-items: start; }
+.modal-projeto__informacoes { padding-top: 12px; }
+.modal__projeto-galeria { position: relative; min-height: 260px; display: grid; place-items: center; overflow: hidden; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--bg); }
+.modal__projeto-imagem { display: block; width: 100%; height: auto; max-height: 390px; object-fit: contain; }
+.modal__galeria-controle { position: absolute; z-index: 2; top: 50%; transform: translateY(-50%); width: 32px; height: 32px; display: grid; place-items: center; border: 1px solid rgba(255,255,255,0.35); border-radius: 50%; background: rgba(5,8,14,0.6); color: var(--white); font-size: 1.35rem; line-height: 1; }
+.modal__galeria-controle:hover { background: rgba(5,8,14,0.85); }
+.modal__galeria-controle--anterior { left: 10px; }
+.modal__galeria-controle--proxima { right: 10px; }
+.modal__descricao { color: var(--gray); line-height: 1.7; margin: 20px 0; }
+.modal__tecnologias { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 26px; padding: 0; list-style: none; }
+.modal__tecnologias li { font-family: var(--font-mono); font-size: 0.72rem; color: var(--blue-light); background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.25); padding: 5px 10px; border-radius: 999px; }
+.modal__acoes { display: flex; gap: 10px; }
+.modal__acoes .botao { flex: 1; justify-content: center; }
+
+@media (max-width: 720px) {
+	.modal-projeto__cabecalho { grid-template-columns: 1fr; gap: 12px; }
+	.modal-projeto__informacoes { padding-top: 8px; }
+	.modal__projeto-galeria { min-height: 190px; }
+	.modal__projeto-imagem { max-height: 300px; }
+}

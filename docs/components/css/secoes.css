@@ -1,0 +1,48 @@
+/* ---------- SEÇÕES, SOBRE, HABILIDADES E IDIOMAS ---------- */
+.secao,
+.section { padding: 120px 0; }
+.secao--alternativa,
+.secao--alternativa { background: var(--bg-secondary); }
+
+.entrada { opacity: 0; transform: translateY(24px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
+.entrada.visivel { opacity: 1; transform: translateY(0); }
+#habilidades .habilidades__grupo.entrada:nth-child(odd) { transform: translateX(-28px); }
+#habilidades .habilidades__grupo.entrada:nth-child(even) { transform: translateX(28px); }
+#habilidades .habilidades__grupo.entrada.visivel { transform: translateX(0); }
+
+.sobre__introducao { max-width: 74ch; color: var(--gray); font-size: 1.08rem; margin-bottom: 48px; }
+.sobre__grade { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.cartao { background: var(--glass-bg); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 28px; transition: transform var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease); }
+.cartao:hover { transform: translateY(-4px); border-color: var(--border-strong); box-shadow: var(--shadow-md); }
+.cartao__icone { display: inline-grid; place-items: center; width: 46px; height: 46px; border-radius: 12px; background: rgba(59, 130, 246, 0.12); color: var(--blue-light); margin-bottom: 18px; }
+.cartao__titulo { font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; }
+.cartao__texto { color: var(--gray); font-size: 0.95rem; }
+
+.visual-habilidades { display: grid; gap: 42px; }
+.habilidades__grupo { display: flex; flex-direction: column; gap: 18px; }
+.habilidades__grupo-titulo { font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); font-weight: 700; }
+.tecnologias { display: flex; flex-wrap: wrap; gap: 18px 20px; }
+.tecnologia { width: 88px; height: 88px; border-radius: 18px; border: 1px solid var(--border); display: grid; place-items: center; color: var(--white); text-align: center; padding: 10px; box-shadow: inset 0 1px 0 rgba(255,255,255,0.08), 0 14px 22px -18px rgba(0,0,0,0.72); font-weight: 800; letter-spacing: -0.04em; line-height: 1.1; }
+.tecnologia span { display: block; font-size: 0.82rem; word-break: break-word; }
+.tecnologia--html { background: linear-gradient(135deg, #f97316, #f59e0b); }
+.tecnologia--css { background: linear-gradient(135deg, #38bdf8, #2563eb); }
+.tecnologia--js { background: linear-gradient(135deg, #facc15, #f59e0b); color: #111827; }
+.tecnologia--ts { background: linear-gradient(135deg, #60a5fa, #2563eb); }
+.tecnologia--python { background: linear-gradient(135deg, #4ade80, #16a34a); }
+.tecnologia--react { background: linear-gradient(135deg, #67e8f9, #0ea5e9); }
+.tecnologia--express { background: linear-gradient(135deg, #f3f4f6, #a1a1aa); color: #111827; }
+.tecnologia--net { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+.tecnologia--vite { background: linear-gradient(135deg, #a78bfa, #7c3aed); }
+.tecnologia--git { background: linear-gradient(135deg, #f87171, #ef4444); }
+.tecnologia--github { background: linear-gradient(135deg, #dfe7f3, #94a3b8); color: #111827; }
+.tecnologia--actions { background: linear-gradient(135deg, #1d4ed8, #0f172a); }
+.tecnologia--docker { background: linear-gradient(135deg, #60a5fa, #1d4ed8); }
+.tecnologia--vscode { background: linear-gradient(135deg, #38bdf8, #0ea5e9); }
+.tecnologia--pgadmin { background: linear-gradient(135deg, #c4b5fd, #7c3aed); }
+.tecnologia--postgres { background: linear-gradient(135deg, #34d399, #16a34a); }
+
+.idiomas { margin-top: 48px; padding: 28px 30px; border: 1px solid var(--border); border-radius: var(--radius-md); background: linear-gradient(180deg, rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.52)); box-shadow: inset 0 1px 0 rgba(255,255,255,0.06), 0 18px 34px -28px rgba(15,23,42,0.9); }
+.idiomas__titulo { margin: 0 0 20px; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gray); }
+.idiomas__lista { display: flex; flex-wrap: wrap; gap: 14px; }
+.idioma { display: inline-flex; align-items: center; gap: 10px; padding: 12px 18px; border-radius: 999px; border: 1px solid rgba(148, 163, 184, 0.2); background: rgba(15, 23, 42, 0.38); color: var(--white); font-size: 0.96rem; font-weight: 600; box-shadow: inset 0 1px 0 rgba(255,255,255,0.04); }
+.idioma strong { display: inline-flex; align-items: center; justify-content: center; min-width: 92px; padding: 6px 10px; border-radius: 999px; background: linear-gradient(135deg, rgba(59, 130, 246, 0.18), rgba(96, 165, 250, 0.08)); border: 1px solid rgba(96, 165, 250, 0.28); color: var(--blue-light); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }

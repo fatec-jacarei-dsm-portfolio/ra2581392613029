@@ -1,0 +1,38 @@
+/* ==========================================================================
+   TOKENS DE DESIGN
+  Toda cor, fonte, raio e transição do site vem daqui.
+   ========================================================================== */
+
+:root {
+  /* paleta */
+  --bg: #0D1117;
+  --bg-secondary: #161B22;
+  --bg-elevated: #1B2230;
+  --blue: #3B82F6;
+  --blue-light: #60A5FA;
+  --white: #F8FAFC;
+  --gray: #94A3B8;
+
+  /* derivados */
+  --border: rgba(248, 250, 252, 0.08);
+  --border-strong: rgba(96, 165, 250, 0.35);
+  --glass-bg: rgba(22, 27, 34, 0.72);
+  --glow: rgba(59, 130, 246, 0.35);
+  --shadow-md: 0 16px 40px -18px rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 30px 70px -24px rgba(0, 0, 0, 0.65);
+
+  /* tipografia */
+  --font-sans: 'Manrope', sans-serif;
+  --font-mono: 'Manrope', sans-serif;
+
+  /* geometria */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --container: 1180px;
+
+  /* movimento */
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 0.2s;
+  --dur-med: 0.5s;
+}

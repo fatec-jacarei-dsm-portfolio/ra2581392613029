@@ -1,0 +1,123 @@
+/* ---------- RESET E BASE GLOBAL ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--white);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, p, ul, ol, figure { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; background: none; border: none; cursor: pointer; }
+img { max-width: 100%; display: block; }
+input, textarea { font: inherit; color: inherit; }
+
+.icone {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+.icone--sm { width: 16px; height: 16px; }
+.icone--lg { width: 40px; height: 40px; stroke-width: 1.4; }
+.icone--xl { width: 56px; height: 56px; stroke-width: 1.2; color: var(--blue-light); }
+
+.container {
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+.pular-conteudo {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: var(--blue);
+  color: var(--white);
+  padding: 12px 18px;
+  border-radius: 0 0 var(--radius-sm) 0;
+  z-index: 999;
+}
+.pular-conteudo:focus { left: 0; }
+
+:focus-visible {
+  outline: 2px solid var(--blue-light);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ---------- TIPOGRAFIA ---------- */
+.secao__titulo {
+  font-size: clamp(1.9rem, 1.5rem + 1.6vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--white);
+}
+.secao__descricao {
+  margin-top: 10px;
+  max-width: 54ch;
+  color: var(--gray);
+  font-size: 1.05rem;
+}
+.secao__cabecalho { margin-bottom: 48px; }
+
+/* ---------- BOTÕES ---------- */
+.botao {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 26px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+  white-space: nowrap;
+}
+.botao--primario {
+  background: linear-gradient(135deg, var(--blue), #2f6fe0);
+  color: var(--white);
+  box-shadow: 0 10px 30px -10px var(--glow);
+}
+.botao--gradiente { background: linear-gradient(90deg, var(--blue), var(--blue-light), #2f6fe0, var(--blue)); background-size: 300% 100%; }
+.botao--gradiente:hover { animation: gradientMove 2s linear infinite; transform: translateY(-2px); box-shadow: 0 16px 36px -10px var(--glow); }
+.botao--secundario { background: transparent; color: var(--white); border: 1px solid var(--border-strong); }
+.botao--secundario:hover { background: rgba(96, 165, 250, 0.08); border-color: var(--blue-light); }
+.botao--shine,
+.menu__link--acao { position: relative; isolation: isolate; overflow: hidden; }
+.botao--shine::after,
+.menu__link--acao::after { content: ""; position: absolute; z-index: 0; top: 0; left: -120%; width: 45%; height: 100%; background: linear-gradient(105deg, transparent, rgba(255,255,255,0.34), transparent); transform: skewX(-18deg); pointer-events: none; }
+.botao--shine:hover::after,
+.menu__link--acao:hover::after { animation: shine 0.8s; }
+.efeito-glow { transition: box-shadow var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease); }
+.efeito-glow:hover,
+.cartao.efeito-glow:hover,
+.cartao-projeto.efeito-glow:hover,
+.cartao-certificado.efeito-glow:hover,
+.contato__item.efeito-glow:hover,
+.seletor-idioma.efeito-glow:hover { box-shadow: 0 0 6px rgba(59, 130, 246, 0.42), 0 0 14px rgba(59, 130, 246, 0.26), 0 0 24px rgba(59, 130, 246, 0.14); }
+@keyframes gradientMove { 0% { background-position: 0%; } 100% { background-position: 300%; } }
+@keyframes shine { 100% { left: 150%; } }
+.botao--sm { padding: 10px 18px; font-size: 0.85rem; }
+.botao--bloco { width: 100%; justify-content: center; }
+.botao:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }

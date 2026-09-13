@@ -1,0 +1,29 @@
+/* ---------- RESPONSIVIDADE ---------- */
+@media (max-width: 1024px) {
+  .sobre__grade { grid-template-columns: repeat(2, 1fr); }
+  .projetos { grid-template-columns: repeat(2, 1fr); }
+  .certificados { grid-template-columns: repeat(2, 1fr); }
+  .apresentacao__grade { grid-template-columns: 1fr; gap: 70px; }
+  .apresentacao__visual { order: -1; }
+  .janela-codigo { margin-left: 0; }
+  .contato { grid-template-columns: 1fr; }
+  .rodape__grade { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 720px) {
+  .secao { padding: 84px 0; }
+  .menu__links { position: fixed; top: 0; right: 0; height: 100vh; width: min(78vw, 320px); background: var(--bg-secondary); border-left: 1px solid var(--border); flex-direction: column; align-items: flex-start; justify-content: flex-start; padding: 100px 30px; gap: 26px; transform: translateX(100%); transition: transform var(--dur-med) var(--ease); }
+  .menu__links.aberto { transform: translateX(0); }
+  .menu__botao { display: inline-grid; }
+  .apresentacao { padding-top: 110px; }
+  .apresentacao__acoes { flex-direction: column; align-items: stretch; }
+  .quadro-avatar { width: min(220px, 62%); }
+  .sobre__grade { grid-template-columns: 1fr; }
+  .visual-habilidades { grid-template-columns: 1fr; gap: 10px; }
+  .projetos { grid-template-columns: 1fr; }
+  .certificados { grid-template-columns: 1fr; }
+  .linha-do-tempo { padding-left: 42px; }
+  .linha-do-tempo__marcador { left: -42px; width: 28px; height: 28px; font-size: 0.65rem; }
+  .rodape__grade { grid-template-columns: 1fr; text-align: left; }
+  .rodape__social { margin-top: 4px; }
+}

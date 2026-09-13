@@ -1,0 +1,11 @@
+/* Manifesto dos estilos por área. A ordem preserva a cascata original. */
+@import url('./nucleo.css');
+@import url('./cabecalho.css');
+@import url('./destaque.css');
+@import url('./secoes.css');
+@import url('./projetos.css');
+@import url('./certificados.css');
+@import url('./contato.css');
+@import url('./rodape.css');
+@import url('./janela-modal.css');
+@import url('./responsivo.css');

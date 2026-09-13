@@ -1,11 +1,275 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Portfólio - HENRIQUE MARTINS BUENO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Henrique Bueno — Desenvolvedor Full Stack</title>
+<meta name="description" content="Portfólio de Henrique Bueno, estudante de Desenvolvimento de Software Full Stack. Projetos, habilidades, certificados e contato.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="components/css/variaveis.css">
+<link rel="stylesheet" href="components/css/estilos.css">
 </head>
 <body>
-    <h1>Bem vindo ao Portfólio de HENRIQUE MARTINS BUENO</h1>
+
+<!-- ============ SPRITE DE ÍCONES (SVG, sem bibliotecas externas) ============ -->
+<svg style="display:none" aria-hidden="true">
+  <symbol id="icon-menu" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+  <symbol id="icon-close" viewBox="0 0 24 24"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></symbol>
+  <symbol id="icon-github" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.2c0 4.5 2.87 8.32 6.84 9.67.5.1.68-.22.68-.5 0-.24-.01-1.03-.01-1.87-2.78.62-3.37-1.22-3.37-1.22-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.9 1.56 2.36 1.11 2.94.85.09-.66.35-1.11.64-1.37-2.22-.26-4.56-1.14-4.56-5.05 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.92-2.34 4.78-4.57 5.04.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.6.69.5A10.03 10.03 0 0 0 22 12.2C22 6.58 17.52 2 12 2Z"/></symbol>
+  <symbol id="icon-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2.5"/><line x1="7.5" y1="10" x2="7.5" y2="17"/><circle cx="7.5" cy="6.8" r="1" fill="currentColor" stroke="none"/><path d="M11.5 17v-4.2c0-1.6 1-2.6 2.4-2.6 1.3 0 2.1.9 2.1 2.6V17"/><line x1="11.5" y1="10" x2="11.5" y2="17"/></symbol>
+  <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 6.5 8 6.2 8-6.2"/></symbol>
+  <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M7 3.5c.7 0 1.9 2.3 1.9 3.1 0 .8-1.4 1.5-1.4 2.3 0 1.6 3.2 4.8 4.8 4.8.8 0 1.5-1.4 2.3-1.4.8 0 3.1 1.2 3.1 1.9 0 1.3-1.3 2.8-2.7 2.8-3 0-9.9-6.9-9.9-9.9 0-1.4 1.5-2.7 2.8-2.7Z"/></symbol>
+  <symbol id="icon-external" viewBox="0 0 24 24"><path d="M9 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-3"/><path d="M14 4h6v6"/><line x1="20" y1="4" x2="11" y2="13"/></symbol>
+  <symbol id="icon-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.8"/><circle cx="12" cy="12" r="1.1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="icon-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15 9-2 6-6 2 2-6z"/></symbol>
+  <symbol id="icon-layers" viewBox="0 0 24 24"><path d="m12 3 9 4.7-9 4.7-9-4.7Z"/><path d="m3 13.4 9 4.7 9-4.7"/></symbol>
+  <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7"/></symbol>
+  <symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><line x1="3.5" y1="9.5" x2="20.5" y2="9.5"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/></symbol>
+  <symbol id="icon-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="icon-send" viewBox="0 0 24 24"><path d="M21 3 3 10.5l7 2.7L21 3Z"/><path d="M10.7 13.2 9.5 20l3-4.3"/></symbol>
+  <symbol id="icon-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="icon-clipboard" viewBox="0 0 24 24"><rect x="6" y="4.5" width="12" height="16" rx="2"/><rect x="9" y="3" width="6" height="3" rx="1"/><line x1="9" y1="11" x2="15" y2="11"/><line x1="9" y1="15" x2="13" y2="15"/></symbol>
+  <symbol id="icon-cloud" viewBox="0 0 24 24"><path d="M7.5 18.5a4.3 4.3 0 0 1-1-8.5 5.4 5.4 0 0 1 10.4-1.6 4 4 0 0 1-.9 8.1Z"/></symbol>
+  <symbol id="icon-edit" viewBox="0 0 24 24"><path d="M4 20h4.2L19.5 8.7a1.9 1.9 0 0 0-3-3L5.5 16.8Z"/><line x1="14.5" y1="6.7" x2="17.5" y2="9.7"/></symbol>
+  <symbol id="icon-trending" viewBox="0 0 24 24"><path d="m3 17 6-6 4 4 8-8.5"/><path d="M15 6.5h5.5V12"/></symbol>
+  <symbol id="icon-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.3 9.3a2.7 2.7 0 1 1 4 2.4c-.9.6-1.3 1-1.3 2"/><circle cx="12" cy="17" r=".2" fill="currentColor" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="icon-cart" viewBox="0 0 24 24"><circle cx="9.5" cy="20" r="1.1" fill="currentColor" stroke="none"/><circle cx="17.5" cy="20" r="1.1" fill="currentColor" stroke="none"/><path d="M2.5 3.5h2.7l2 12.3h11l1.8-8.3H6"/></symbol>
+  <symbol id="icon-code" viewBox="0 0 24 24"><path d="m8.5 8-4.2 4 4.2 4"/><path d="m15.5 8 4.2 4-4.2 4"/><line x1="13.2" y1="5.5" x2="10.8" y2="18.5"/></symbol>
+  <symbol id="icon-arrow-up" viewBox="0 0 24 24"><line x1="12" y1="19" x2="12" y2="5"/><path d="m6 11 6-6 6 6"/></symbol>
+</svg>
+
+<!-- ============ NAVEGAÇÃO ============ -->
+<header class="cabecalho-site" id="cabecalho-site">
+  <nav class="menu-navegacao" aria-label="Navegação principal">
+    <a href="#inicio" class="menu__marca">Henrique M<span>.</span> Bueno</a>
+
+    <ul class="menu__links" id="menu-links">
+      <li><a href="#inicio" class="menu__link" data-i18n="navegacao.inicio"></a></li>
+      <li><a href="#projetos" class="menu__link" data-i18n="navegacao.projetos"></a></li>
+      <li><a href="#certificados" class="menu__link" data-i18n="navegacao.certificados"></a></li>
+      <li><a href="#sobre" class="menu__link" data-i18n="navegacao.sobre"></a></li>
+      <li><a href="#habilidades" class="menu__link" data-i18n="navegacao.habilidades"></a></li>
+      <li><a href="#contato" class="menu__link menu__link--acao" data-i18n="navegacao.contato"></a></li>
+    </ul>
+
+    <div class="menu__acoes">
+      <button type="button" class="seletor-idioma efeito-glow" id="seletor-idioma" aria-label="Switch language" aria-pressed="false">
+        <span class="seletor-idioma__trilho">
+          <span class="seletor-idioma__indicador" aria-hidden="true"></span>
+          <span class="seletor-idioma__rotulo ativo">PT</span>
+          <span class="seletor-idioma__rotulo">EN</span>
+        </span>
+      </button>
+      <button class="menu__botao" id="menu-botao" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="menu-links">
+        <svg class="icone" aria-hidden="true"><use href="#icon-menu"></use></svg>
+      </button>
+    </div>
+  </nav>
+  <div class="menu__progresso" id="menu-progresso"></div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="apresentacao" id="inicio">
+    <div class="apresentacao__fundo" aria-hidden="true"></div>
+    <div class="apresentacao__grade container">
+
+      <div class="apresentacao__conteudo">
+        <p class="apresentacao__status">
+          <span class="apresentacao__status-ponto"></span>
+          <span data-i18n="destaque.status"></span>
+        </p>
+
+        <h1 class="apresentacao__nome">Henrique Bueno</h1>
+        <p class="apresentacao__cargo" data-i18n="destaque.cargo"></p>
+
+        <p class="apresentacao__descricao" data-i18n="destaque.descricao"></p>
+
+        <div class="apresentacao__acoes">
+          <a href="#projetos" class="botao botao--primario botao--gradiente" data-i18n="destaque.acaoProjetos"></a>
+          <a href="#contato" class="botao botao--secundario botao--shine" data-i18n="destaque.acaoContato"></a>
+        </div>
+      </div>
+
+      <div class="apresentacao__visual">
+        <div class="quadro-avatar" aria-hidden="true">
+          <img class="quadro-avatar__imagem" src="assets/avatar/avatar.jpg" alt="Foto de Henrique Bueno" onerror="this.hidden = true;">
+          <svg class="quadro-avatar__svg" viewBox="0 0 240 240">
+            <defs>
+              <linearGradient id="avatarGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#3B82F6"/>
+                <stop offset="1" stop-color="#161B22"/>
+              </linearGradient>
+              <pattern id="avatarGridPattern" width="16" height="16" patternUnits="userSpaceOnUse">
+                <path d="M16 0H0V16" fill="none" stroke="rgba(248,250,252,0.08)" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect x="4" y="4" width="232" height="232" rx="28" fill="url(#avatarGrad)"/>
+            <rect x="4" y="4" width="232" height="232" rx="28" fill="url(#avatarGridPattern)"/>
+            <rect x="4" y="4" width="232" height="232" rx="28" fill="none" stroke="rgba(96,165,250,0.4)" stroke-width="1.5"/>
+            <text x="120" y="146" text-anchor="middle" font-family="inherit" font-size="72" font-weight="700" fill="#F8FAFC" opacity="0.92">HB</text>
+          </svg>
+          
+        </div>
+      </div>
+
+    </div>
+
+    <a href="#sobre" class="apresentacao__rolagem" aria-label="Rolar para a seção Sobre">
+      <svg class="icone" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+    </a>
+  </section>
+
+  <!-- ============ PROJETOS ============ -->
+  <section class="secao" id="projetos">
+    <div class="container">
+      <div class="secao__cabecalho">
+        <h2 class="secao__titulo" data-i18n="secoes.projetos.titulo"></h2>
+        <p class="secao__descricao" data-i18n="secoes.projetos.descricao"></p>
+      </div>
+
+      <div class="projetos-filtros" aria-label="Filtros de projetos">
+        <button type="button" class="filtro-projeto ativo" data-filtro="todos" aria-pressed="true" data-i18n="filtros.0"></button>
+        <button type="button" class="filtro-projeto" data-filtro="profissional" aria-pressed="false" data-i18n="filtros.1"></button>
+        <button type="button" class="filtro-projeto" data-filtro="academico" aria-pressed="false" data-i18n="filtros.2"></button>
+        <button type="button" class="filtro-projeto" data-filtro="pessoal" aria-pressed="false" data-i18n="filtros.3"></button>
+      </div>
+
+      <div class="projetos" id="grade-projetos"></div>
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICADOS ============ -->
+  <section class="secao secao--alternativa" id="certificados">
+    <div class="container">
+      <div class="secao__cabecalho">
+        <h2 class="secao__titulo" data-i18n="secoes.certificados.titulo"></h2>
+        <p class="secao__descricao" data-i18n="secoes.certificados.descricao"></p>
+      </div>
+
+      <div class="certificados" id="grade-certificados"></div>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE ============ -->
+  <section class="secao" id="sobre">
+    <div class="container">
+      <div class="secao__cabecalho">
+        <h2 class="secao__titulo" data-i18n="secoes.sobre.titulo"></h2>
+        <p class="secao__descricao" data-i18n="secoes.sobre.descricao"></p>
+      </div>
+
+      <div class="sobre">
+        <p class="sobre__introducao" id="introducao-sobre"></p>
+
+        <div class="sobre__grade" id="destaques-sobre"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HABILIDADES ============ -->
+  <section class="secao secao--alternativa" id="habilidades">
+    <div class="container">
+      <div class="secao__cabecalho">
+        <h2 class="secao__titulo" data-i18n="secoes.habilidades.titulo"></h2>
+        <p class="secao__descricao" data-i18n="secoes.habilidades.descricao"></p>
+      </div>
+
+      <div class="visual-habilidades" id="grade-habilidades"></div>
+
+      <div class="idiomas" aria-label="Idiomas">
+        <h3 class="idiomas__titulo" data-i18n="idiomas.titulo"></h3>
+        <div class="idiomas__lista" id="lista-idiomas"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTATO ============ -->
+  <section class="secao secao--alternativa" id="contato">
+    <div class="container">
+      <div class="secao__cabecalho">
+        <h2 class="secao__titulo" data-i18n="secoes.contato.titulo"></h2>
+        <p class="secao__descricao" data-i18n="secoes.contato.descricao"></p>
+      </div>
+
+      <div class="contato">
+        <div class="contato__informacoes contato__informacoes--simples" id="links-sociais"></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="rodape">
+  <div class="container rodape__grade">
+    <div class="rodape__marca">
+      <a href="#inicio" class="menu__marca">Henrique<span>.</span>Bueno</a>
+      <p data-i18n="rodape.chamada"></p>
+    </div>
+
+    <nav class="rodape__links" aria-label="Links rápidos">
+      <a href="#projetos" data-i18n="navegacao.projetos"></a>
+      <a href="#certificados" data-i18n="navegacao.certificados"></a>
+      <a href="#sobre" data-i18n="navegacao.sobre"></a>
+      <a href="#habilidades" data-i18n="navegacao.habilidades"></a>
+      <a href="#contato" data-i18n="navegacao.contato"></a>
+    </nav>
+
+    <div class="rodape__social">
+      <a href="#" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><svg class="icone" aria-hidden="true"><use href="#icon-github"></use></svg></a>
+      <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg class="icone" aria-hidden="true"><use href="#icon-linkedin"></use></svg></a>
+    </div>
+  </div>
+
+  <div class="container rodape__inferior">
+    <p>&copy; <span id="ano-rodape"></span> Henrique Bueno. <span data-i18n="rodape.direitos"></span></p>
+  </div>
+</footer>
+
+<!-- ============ MODAL DE PROJETO ============ -->
+<div class="modal" id="modal-projeto" aria-hidden="true">
+  <div class="modal__sobreposicao" id="sobreposicao-modal-projeto"></div>
+  <div class="modal__janela modal__janela--projeto" role="dialog" aria-modal="true" aria-labelledby="titulo-modal-projeto">
+    <button type="button" class="modal__fechar" id="fechar-modal-projeto" aria-label="Fechar">
+      <svg class="icone" aria-hidden="true"><use href="#icon-close"></use></svg>
+    </button>
+    <div class="modal-projeto__cabecalho">
+      <div class="modal-projeto__informacoes">
+        <h3 id="titulo-modal-projeto" class="modal__titulo"></h3>
+        <ul class="modal__tecnologias"></ul>
+      </div>
+      <div class="modal__projeto-galeria">
+        <img class="modal__projeto-imagem" src="" alt="">
+        <button type="button" class="modal__galeria-controle modal__galeria-controle--anterior" data-direcao="anterior" aria-label="Imagem anterior">‹</button>
+        <button type="button" class="modal__galeria-controle modal__galeria-controle--proxima" data-direcao="proxima" aria-label="Próxima imagem">›</button>
+      </div>
+    </div>
+    <p class="modal__descricao"></p>
+    <div class="modal__acoes">
+      <a class="botao botao--sm botao--secundario botao--shine modal__github" target="_blank" rel="noopener noreferrer" href="#"><span data-i18n="acoes.github">GitHub</span></a>
+      <a class="botao botao--sm botao--primario botao--gradiente modal__demo" target="_blank" rel="noopener noreferrer" href="#"><span data-i18n="acoes.demo">Demo</span> <svg class="icone icone--sm" aria-hidden="true"><use href="#icon-external"></use></svg></a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ MODAL DE CERTIFICADO ============ -->
+<div class="modal" id="modal-certificado" aria-hidden="true">
+  <div class="modal__sobreposicao" id="sobreposicao-modal-certificado"></div>
+  <div class="modal__janela" role="dialog" aria-modal="true" aria-labelledby="titulo-modal">
+    <button type="button" class="modal__fechar" id="fechar-modal-certificado" aria-label="Fechar">
+      <svg class="icone" aria-hidden="true"><use href="#icon-close"></use></svg>
+    </button>
+    <h3 id="titulo-modal" class="modal__titulo"></h3>
+    <p class="modal__instituicao"></p>
+    <p class="modal__data"></p>
+    <img class="modal__certificado-imagem" src="" alt="" hidden onerror="this.hidden = true;">
+  </div>
+</div>
+
+<script type="module" src="src/aplicacao.js"></script>
 </body>
 </html>
