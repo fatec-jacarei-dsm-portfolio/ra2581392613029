@@ -2,7 +2,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 html {
   scroll-behavior: smooth;
-  scrollbar-color: var(--blue) var(--bg-secondary);
+  scrollbar-color: var(--blue-light) var(--bg-secondary);
   scrollbar-width: thin;
 }
 
