@@ -1,6 +1,19 @@
 /* ---------- RESET E BASE GLOBAL ---------- */
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: var(--blue) var(--bg-secondary);
+  scrollbar-width: thin;
+}
+
+html::-webkit-scrollbar { width: 10px; }
+html::-webkit-scrollbar-track { background: var(--bg-secondary); }
+html::-webkit-scrollbar-thumb {
+  background: var(--blue);
+  border: 2px solid var(--bg-secondary);
+  border-radius: 999px;
+}
+html::-webkit-scrollbar-thumb:hover { background: var(--blue-light); }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
