@@ -10,12 +10,12 @@ export const projetos = [
   titulo: 'Scrum do Zero',
   categoria: 'academico',
   resumo: {
-    pt: 'Projeto acadêmico desenvolvido em equipe utilizando Scrum para criar um portal de certificação em metodologias ágeis.',
-    en: 'Academic team project using Scrum to develop a certification portal focused on agile methodologies.'
+    pt: 'Projeto acadêmico (1DSM – 1º Sem. 2026) desenvolvido em equipe utilizando Scrum para criar um portal de certificação em metodologias ágeis.',
+    en: 'Academic team project (1DSM – 1º Sem. 2026) using Scrum to develop a certification portal focused on agile methodologies.'
   },
   descricao: {
-    pt: 'Primeiro projeto em equipe utilizando Scrum, desenvolvido como parte de uma Atividade Baseada em Projeto (ABP). Atuei como Product Owner, participando da estruturação do projeto, organização e acompanhamento das atividades, definição de prioridades e documentação. Ao longo de três sprints, a equipe desenvolveu e concluiu um portal de certificação em metodologias ágeis, aplicando conceitos de desenvolvimento web, banco de dados, modelagem e práticas ágeis.',
-    en: 'My first team project using Scrum, developed as part of a Project-Based Learning activity. I worked as Product Owner, contributing to project structuring, task organization and tracking, prioritization, and documentation. Across three sprints, the team developed and completed a certification portal focused on agile methodologies, applying web development, database, modeling, and agile practices.'
+    pt: 'Primeiro projeto em equipe utilizando Scrum, desenvolvido como parte de uma Atividade Baseada em Projeto (ABP 1DSM – 1º Sem. 2026). Atuei como Product Owner, participando da estruturação do projeto, organização e acompanhamento das atividades, definição de prioridades e documentação. Ao longo de três sprints, a equipe desenvolveu e concluiu um portal de certificação em metodologias ágeis, aplicando conceitos de desenvolvimento web, banco de dados, modelagem e práticas ágeis.',
+    en: 'My first team project using Scrum, developed as part of a Project-Based Learning activity (ABP 1DSM – 1º Sem. 2026). I worked as Product Owner, contributing to project structuring, task organization and tracking, prioritization, and documentation. Across three sprints, the team developed and completed a certification portal focused on agile methodologies, applying web development, database, modeling, and agile practices.'
   },
   tecnologias: ['HTML5', 'CSS', 'JavaScript', 'Node.js', 'PostgreSQL', 'Figma', 'GitHub', 'UML', 'Scrum'],
   imagens: ['assets/projetos/abp1/inicio.png', 'assets/projetos/abp1/cadastro.png', 'assets/projetos/abp1/questoes.png'],
