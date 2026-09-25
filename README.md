@@ -1,8 +1,8 @@
 # Portfólio de Projetos - Fatec Jacareí
 
-**Aluno:** [Henrique Martins Bueno]  
+**Aluno:** Henrique Martins Bueno  
 **Curso:** Desenvolvimento de Software Multiplataforma  
-**Turma:** [1° Semestre de 2026]
+**Turma:** 1° Semestre de 2026
 
 ---
 
